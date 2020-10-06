@@ -14,7 +14,7 @@ int main() {
      c = (x - sum) - y;
      sum = x;
      ++n;
-     if (n<21 || n%36000==0) printf("step=%d expected=%f solution=%f diff=%f\n",n, 0.1f*n, sum, std::abs(0.1f*n-sum));
+     if (n<21 || n%36000==0) printf("step=%llu expected=%f solution=%f diff=%f\n",n, 0.1f*n, sum, std::abs(0.1f*n-sum));
    }
    return 0;
 }
